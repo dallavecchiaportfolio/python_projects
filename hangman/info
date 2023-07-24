@@ -1,0 +1,13 @@
+- Create Virtual Environment
+>python3 -m venv env (env is the virutal environment name)
+
+- Activate Virtual Environment
+>source env/bin/activate
+
+- Install packages those will be used in the project. They will be available only for that project
+>pip3 install bs4 requests (Both packages bs4 and requests, will be installed only in the Virtual Environment)
+
+- Run the application
+>python3 app.py
+
+- To generate an executable file (using pyinstaller) need to copy library folder to the dist/app folder, then run from terminal > ./app
