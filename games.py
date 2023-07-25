@@ -14,7 +14,7 @@ set_path = ""
 
 match which_os:
     case "Windows":
-        set_path = "C:\Users\dalla\Documents\python_projects"
+        set_path = "C:\\Users\\dalla\\Documents\\python_projects\\"
     case "Linux":
         set_path = "/home/gio/Documents/python_projects"
     case "Darwin":
@@ -27,14 +27,14 @@ match which_os:
 gameChosed = input("\nWhich game would you like to play? ")
 
 match gameChosed:
-    case 1:
+    case "1":
         print("You want to play Guess Number")
-        exec(open("/home/gio/Documents/projects/python/guessNumberv1.py").read())
-    case 2:
+        exec(open(set_path + "guessNumber.py").read())
+    case "2":
         print("You want to play Lower/Greater")
-        exec(open("/home/gio/Documents/projects/python/greaterLowerv1.py").read())
-    case 3:
+        exec(open(set_path + "greaterLowerv1.py").read())
+    case "3":
         print("You want to play Rock/Paper/Scissors")
-        exec(open("/home/gio/Documents/projects/python/rps.py").read())
+        exec(open(set_path + "rps.py").read())
     case _:
         print("Can see you are not in a mood today! Bye Bye")
