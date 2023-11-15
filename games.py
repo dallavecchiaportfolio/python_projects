@@ -11,6 +11,7 @@ print("(3) The famous Rock/Paper/Scissors game. You going to play against the co
  
 which_os = platform.system()
 set_path = ""
+print(platform.machine())
 
 match which_os:
     case "Windows":
@@ -19,8 +20,9 @@ match which_os:
         set_path = "/home/gio/Documents/python_projects"
     case "Darwin":
         # macBook Pro
-        set_path = "/Users/pro/Dcouments/python_projects"
+        set_path = "/Users/pro/Dcouments/python_projects/"
         # macBook Air
+        set_path = '/Users/dev/Documents/python_projects/'
     case _:
         print("Cannot set the path, OS not identified!")
 
