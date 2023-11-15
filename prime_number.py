@@ -3,16 +3,16 @@
 
 def factor_of_number(num):
     
-    num_factors = 0
+    total_factor = 0
 
     for i in range(1, num + 1):
         if num % i == 0:
-            num_factors = num_factors + 1
+            total_factor = total_factor + 1
 
-    if num_factors == 2:
+    if total_factor == 2: # IF THE NUMBER OF FACTORS IS MORE THAN TWO, THE NUMBER IS NOT PRIME - DO NOTHING
         print(num, end=' ')
     
 
 
-for i in range(1,100): # CHECK PRIME NUMBER WITHIN THE RANGE 100-150
+for i in range(1,1000): # CHECK PRIME NUMBER WITHIN THE RANGE 100-150
     factor_of_number(i)
