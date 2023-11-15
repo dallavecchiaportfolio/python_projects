@@ -1,3 +1,0 @@
-Add new cards
-Select which cards to show
-Create memory game menu
